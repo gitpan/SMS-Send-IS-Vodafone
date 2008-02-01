@@ -5,7 +5,7 @@ use SMS::Send::Driver ();
 use LWP::UserAgent ();
 use HTTP::Cookies ();
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 our @ISA = 'SMS::Send::Driver';
 
@@ -84,9 +84,11 @@ SMS::Send::IS::Vodafone - SMS::Send driver for vodafone.is
 =head1 DESCRIPTION
 
 A regional L<SMS::Send> driver for Iceland that deliers messages via
-L<http://vodafone.is>. Vodafone only supports ending sms messages to
-its own users, see L<SMS::Send::IS::Vit> for sending SMS to
-SE<iacute>minn users.
+L<http://vodafone.is> to any Icelandic cell phone number.
+
+=head1 SEE ALSO
+
+L<SMS::Send::IS::Vit>
 
 =head1 AUTHOR
 
